@@ -1,0 +1,16 @@
+.QA{
+  max-width: 90%;
+  margin: auto;
+  background-color: rgb(23, 15, 79) ;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.QA h1{
+  color: yellowgreen;
+}
+
+.QA p{
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}

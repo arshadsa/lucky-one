@@ -19,7 +19,7 @@ const Cart = ({cart, emptyCart, removeItem}) => {
           <div className='cartItem' key={item.id}>
             <img src={item.img} alt=""></img>
             <p>{item.name}</p>
-            <a onClick={() => removeItem(item)}><FontAwesomeIcon icon={faTrash}/></a>
+            <button className='btn-trash' onClick={() => removeItem(item)}><FontAwesomeIcon icon={faTrash}/></button>
           </div>
       )}
       <br/><br/>

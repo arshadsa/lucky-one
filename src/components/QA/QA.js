@@ -1,8 +1,9 @@
 import React from 'react';
+import './QA.css';
 
 const QA = () => {
   return (
-    <div>
+    <div className='QA'>
       <h1>How React Works?</h1>
       <p><strong>Ans: </strong>React mainstains a tree for developed code to do efficent differential computation on the nodes. This way React allows the developer to change the DOM efficiently and push only the changes to DOM and not the entire DOM. Secondly, JSX used in React is only a syntactic sugar. These are converted to basic React commands. Then React converts them to plain JavaScript Object. Finally, React App tag is used to push the completed DOM to the UI.</p>
       <h1>What are the differences between Props and State?</h1>
