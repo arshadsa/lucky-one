@@ -1,0 +1,33 @@
+.header{
+  min-height: 80px;
+  /* background-color: black; */
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  /* justify-content: space-between; */
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.header img{
+  height: 70%;
+}
+
+
+@media screen and (max-width:425px) {
+  .header{
+    min-height: 80px;
+    /* background-color: black; */
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    /* justify-content: space-between; */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .header img{
+    height: 70%;
+  }
+
+}
