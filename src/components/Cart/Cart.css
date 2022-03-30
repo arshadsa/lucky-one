@@ -10,9 +10,6 @@
 
 .btn-group{
   padding: 0 20px;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 20px;
 }
 
 .btn-trash{
@@ -20,4 +17,27 @@
 	color: inherit;
 	border: none;
 	padding: 0;
+}
+
+.btn-group button{
+  padding: 0 20px;
+  margin-top: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.btn-group button:hover{
+  border: 2px solid grey;
+}
+
+.chooseOne{
+  color: green ;
+}
+
+.chooseAgain{
+  color: blue;
 }

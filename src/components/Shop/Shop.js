@@ -36,7 +36,12 @@ const Shop = () => {
     }
   }
   const emptyCart = () =>{
+    if(cart.length>0){
       setCart([]);
+    } else {
+      alert('Cart is already empty!');
+    }
+      
   }
   const removeItem = (selectedProduct) => {
     let newCart = cart.filter(product => product.id !== selectedProduct.id);

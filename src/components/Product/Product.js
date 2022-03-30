@@ -11,7 +11,7 @@ const Product = ({product, handleAddtoCart}) => {
       <img src={img} alt=""></img>
       <div className='product-text'>
         <p>Name: <strong>{name}</strong></p>
-        <p>Price: {price}</p>
+        <p>Price: ${price}</p>
       </div>
       <button onClick={() => handleAddtoCart(product)}
       className='btn-cart'>

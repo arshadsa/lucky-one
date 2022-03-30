@@ -9,7 +9,11 @@ const Cart = ({cart, emptyCart, removeItem}) => {
     return Math.floor(Math.random() * max);
   }
   const chooseOne = () => {
-    alert('You can buy ' + cart[getRandomInt(cart.length)].name + '!');
+    if (cart.length > 0){
+      alert('You can buy ' + cart[getRandomInt(cart.length)].name + '!');
+    } else {
+      alert('There is nothing in the cart!');
+    }
   }
   return (
     <div className='cart'>
@@ -24,8 +28,8 @@ const Cart = ({cart, emptyCart, removeItem}) => {
       )}
       <br/><br/>
       <div className='btn-group'>
-        <button onClick={chooseOne}>Choose 1 for me</button>
-        <button onClick={emptyCart}>Choose again</button>
+        <button className='chooseOne' onClick={chooseOne}>Choose 1 for me</button>
+        <button className='chooseAgain' onClick={emptyCart}>Choose again</button>
       </div>
     </div>
   );

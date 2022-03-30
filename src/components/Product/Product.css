@@ -4,7 +4,7 @@
   border-radius: 8px;
   position: relative;
   width: 300px;
-  height: 510px;
+  min-height: 400px;
 }
 
 .product img{
@@ -34,4 +34,8 @@ p{
   bottom: 0;
   position: absolute;
   bottom: 0;
+}
+
+.btn-cart:hover{
+  background: orange;
 }
